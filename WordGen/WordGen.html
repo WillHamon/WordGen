@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>WordGen</title>
+        <link rel="stylesheet" type="text/css" href="WordGenCSS.css"/>
+    </head>
+
     <body>
-        <button id="button">Generate words</button>
+        <p>To use this word generator you must visit <a target="_blank" href="https://random-word-api.herokuapp.com/key?">here</a> to get a free key. Copy this key and paste it into the key box and click "Generate words" to generate a list of 10 words.</p>
+        <button id="button" class="section">Generate words</button>
+        Key: <input type="text" id="key" name="key">
+        <div id="answer"></div>
         <script src="WordGenJS.js"></script>
     </body>
 </html>
