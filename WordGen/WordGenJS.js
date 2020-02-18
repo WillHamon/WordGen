@@ -1,3 +1,6 @@
+//https://random-word-api.herokuapp.com/key?
+const wordApiKey = "YD8P83VM";
+
 var gen = function()
 {
     var xmlHttp = new XMLHttpRequest();
@@ -12,7 +15,7 @@ var gen = function()
         }
     }
 
-    xmlHttp.open("GET", "https://random-word-api.herokuapp.com/word?key=YD8P83VM&number=10", true); // true for asynchronous
+    xmlHttp.open("GET", "https://random-word-api.herokuapp.com/word?key=" + wordApiKey + "&number=10", true); // true for asynchronous
     xmlHttp.send(null);
 }
 
